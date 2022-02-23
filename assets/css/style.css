@@ -1,13 +1,16 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
   color: #39a6b2;
   font-family: Helvetica, Arial, sans-serif;
 }
+
+
+/* HEADER / NAV BAR STYLES START */
 
 header {
   padding: 20px 35px;
@@ -19,9 +22,9 @@ header {
 
 header h1 {
   font-weight: bold;
+  margin: 0;
   font-size: 36px;
   color: #fce138;
-  margin: 0;
 }
 
 header a {
@@ -41,20 +44,24 @@ header nav ul {
   list-style: none;
 }
 
-
 header nav ul li a {
   margin: 0 30px;
   font-weight: lighter;
   font-size: 1.55vw;
 }
 
+/* HEADER / NAVBAR STYLES END */
+
+
+
+/* FOOTER STYLES START */
 footer {
-  justify-content: space-between;
-  flex-wrap: wrap;
   background: #fce138;
-  width: 100%;
   padding: 40px 35px;
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 footer h2 {
@@ -71,12 +78,14 @@ footer div {
 footer a {
   color: #024e76;
 }
+/* END FOOTER STYLES */
 
+/* STYLE ALL SECTION TAGS */
 section {
   padding: 60px;
 }
 
-
+/* HERO STYLES START */
 .hero {
   background-image: url('../images/hero-bg.jpg');
   background-size: cover;
@@ -85,6 +94,7 @@ section {
   justify-content: center;
   flex-wrap: wrap;
 }
+
 .hero-cta {
   width: 35%;
   text-align: right;
@@ -93,6 +103,7 @@ section {
   font-size: 18px;
   line-height: 1.3;
 }
+
 .hero-cta h2 {
   font-style: italic;
   font-size: 55px;
@@ -103,7 +114,7 @@ section {
   border: 3px solid #024e76;
   background-color: #fce138;
   padding: 20px;
-  color: #024e76; 
+  color: #024e76;
   width: 40%;
   margin: 3.5%;
 }
@@ -123,7 +134,7 @@ section {
   font-size: 16px;
   color: #024e76;
   width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 15px; 
 }
 
 .hero-form label {
@@ -136,20 +147,57 @@ section {
   border: none;
   padding: 10px 20px;
   font-size: 16px;
+} 
+/* HERO STYLES END */
+
+
+/* SECTION TITLE STYLES START */
+.section-title {
+  font-size: 55px;
+  border-bottom: 3px solid;
+  color: #024e76;
+  padding-bottom: 20px;
+  text-align: center;
+  margin: 0 auto 35px auto;
+  width: 50%;
 }
 
+.primary-border {
+  border-color: #fce138;
+}
+
+.secondary-border {
+  border-color: #39a6b2;
+}
+/* SECTION TITLE STYLES END */
+
+/* WHAT WE DO STYLES */
 
 .intro p {
   line-height: 1.7;
   color: #39a6b2;
   width: 80%;
-  font-size: 20px;
   margin: 0 auto;
+  font-size: 20px;
   text-align: center;
 }
+/* WHAT YOU DO STYLES END */
 
-.steps {
+
+/* WHAT YOU DO STYLES START */
+.steps { 
   background: #fce138;
+}
+
+.step {
+  margin: 50px auto;
+  padding-bottom: 50px;
+  width: 80%;
+  border-bottom: 1px solid #39a6b2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .step h3 {
@@ -165,11 +213,11 @@ section {
   align-items: center;
 }
 
-
 .step-img {
   flex: 1 12%;
   margin-right: 20px;
 }
+
 .step-img img {
   max-width: 100%;
 }
@@ -178,59 +226,33 @@ section {
   flex: 12;
 }
 
-.steps-text p {
+.step-text p {
   color: #39a6b2;
   font-size: 18px;
 }
+
 .step-text h4 {
   font-size: 26px;
   line-height: 1.5;
   color: #024e76;
 }
-.step {
-  margin: 50px auto;
-  padding-bottom: 50px;
-  width: 80%;
-  border-bottom: 1px solid #39a6b2;
+
+/* WHAT YOU DO STYLES END */
+
+/* MEET THE TRAINERS START */
+.trainers {
+  width: 100%;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
-.section-title {
-  font-size: 55px;
-  color: #024e76;
-  padding-bottom: 20px;
-  text-align: center;
-  margin: 0 auto 35px auto;
-  width: 50%;
- 
-}
-
-.primary-border {
-  border-color: #fce138;
-}
-
-.secondary-border {
-  border-color: #39a6b2;
-}
-
-.trainers {
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    background-color: #024e76;
-  } 
 
 .trainer {
-  
   margin: 20px;
+  flex: 1;
   background: #024e76;
   color: #fce138;
-  flex: 1
-  
 }
 
 .trainer img {
@@ -244,7 +266,6 @@ section {
 
 .trainer-bio h3 {
   font-size: 28px;
-  
 }
 
 .trainer-bio h4 {
@@ -255,20 +276,11 @@ section {
 
 .trainer-bio p {
   font-size: 17px;
-  
 }
-
-.text-left {
-  text-align: left;
-}
-
-.text-right {
-  text-align: right;
-}
+/* TRAINER STYLES END */
 
 /* REACH OUT STYLES START */
 .contact {
-  
   background: #024e76;
 }
 
@@ -276,17 +288,22 @@ section {
   color: #fce138;
 }
 
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact-info > * {
+  flex: 1;
+  margin: 15px;
+}
+
 .contact-info iframe {
-  width: 400px;
   height: 400px;
 }
 
 .contact-info div {
-  width: 410px;
-  display: inline-block;
-  vertical-align: top;
-  text-align: left;
-  margin: 30px 0 0 60px;
   color: white;
 }
 
@@ -295,21 +312,50 @@ section {
   font-size: 32px;
 }
 
-.contact-info p,
-
-.contact-info address {
+.contact-info p, .contact-info address {
   margin: 20px 0;
   line-height: 1.5;
-  font-size: 20px;
+  font-size: 16px;
   font-style: normal;
+}
+
+.contact-form input, .contact-form textarea {
+  border: 1px solid #024e76;
+  display: block;
+  padding: 7px 15px;
+  font-size: 16px;
+  color: #024e76;
+  width: 100%;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+
+.contact-form button {
+  width: 100%;
+  border: none;
+  background: #fce138;
+  color: #024e76;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 16px;
 }
 
 .contact-info a {
   color: #fce138;
 }
 
+
+/* REACH OUT STYLES END */
+
+/* UTILITIES */
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
 .flex-row {
   display: flex;
 }
-
-
