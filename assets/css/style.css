@@ -99,7 +99,6 @@ section {
 .hero {
   background-image: url('../images/hero-bg.jpg');
   background-size: cover;
-  background-position: center;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -164,7 +163,7 @@ section {
   margin: 0 5px;
 }
 
-.hero-form button :hover {
+.hero-form button {
   color: #fce138;
   background-color: #024e76;
   border: none;
@@ -346,7 +345,7 @@ section {
   font-style: normal;
 }
 
-.contact-form input, .contact-form textarea :focus {
+.contact-form input, .contact-form textarea {
   border: 1px solid #024e76;
   display: block;
   padding: 7px 15px;
@@ -356,15 +355,15 @@ section {
   margin-bottom: 15px;
   margin-top: 5px;
   border-radius: 10px;
-  background-color: rgba(255,255,255, 1);
-  outline: none;
+  background-color: rgba(255,255,255, 0.75);
   
 }
 .contact-form input:focus, .contact-form textarea:focus {
+  background-color: rgba(255,255,255, 1);
+  outline: none;
 }
 
-
-.contact-form button :hover {
+.contact-form button {
   width: 100%;
   border: none;
   background: #fce138;
@@ -373,6 +372,11 @@ section {
   padding: 15px 0;
   font-size: 16px;
   border-radius: 10px;
+}
+
+.contact-form button:hover {
+  color: #fce138;
+  background: #39a6b2;
 }
 
  .step:nth-child(even){
